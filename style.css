@@ -7,17 +7,31 @@ body {
 	font-size: 14px;
 }
 
-/* ---------------------------------------------------- */
+/* -------
+
+display: block;
+flex-wrap: nowrap;
+	}
+}
+-------------
+
+-------------------------------- */
+h1 {
+	text-align: center;
+}
 
 img {
 	border-radius: 50%;
 }
 
-.jarmila {
+div {
 box-sizing: border-box;
 border: solid gray;
+width: calc (54%-540px);
 border-radius: 10px;
 text-align: center;
 padding: 20px;
-margin: 0px
 }
+
+
+
