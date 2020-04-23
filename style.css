@@ -8,3 +8,16 @@ body {
 }
 
 /* ---------------------------------------------------- */
+
+img {
+	border-radius: 50%;
+}
+
+.jarmila {
+box-sizing: border-box;
+border: solid gray;
+border-radius: 10px;
+text-align: center;
+padding: 20px;
+margin: 0px
+}
