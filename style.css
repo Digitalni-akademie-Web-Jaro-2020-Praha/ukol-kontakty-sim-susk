@@ -13,25 +13,59 @@ display: block;
 flex-wrap: nowrap;
 	}
 }
--------------
+-------------mobily PC tablet
 
 -------------------------------- */
+
 h1 {
-	text-align: center;
-}
+	text-align: left;
+	padding-left: 120px;
+	}
 
 img {
 	border-radius: 50%;
 }
 
-div {
+.zena1, .zena2, .zena3, .zena4 {
 box-sizing: border-box;
 border: solid gray;
-width: calc (54%-540px);
+width: 300px;
 border-radius: 10px;
 text-align: center;
 padding: 20px;
+margin: 15px;
+}
+
+/* mobil */
+@media screen and (min-width: 0px) and (max-width:540px) {
+	.flexbox {
+	box-sizing: border-box;
+	display: block;
+	flex-wrap: nowrap;
+}
+h1 {
+	text-align: left;
+	padding-left: 120px;
+	}
+}
+
+/* tablet /
+@media screen and (min-width: 540px) and (max-width:960px) {
+	.zena1, .zena2 {
+	display: flex;
+flex-wrap: wrap;
+}
 }
 
 
+/* PC /
+@media screen and (min-width: 960px) {
+	.flexbox {
+	display: flex;
+flex-wrap: wrap;
+flex: 1;
+flex-direction: column;
+}
+}
 
+*/
