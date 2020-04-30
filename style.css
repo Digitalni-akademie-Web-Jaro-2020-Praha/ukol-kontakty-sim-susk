@@ -7,65 +7,63 @@ body {
 	font-size: 14px;
 }
 
-/* -------
-
-display: block;
-flex-wrap: nowrap;
-	}
-}
--------------mobily PC tablet
-
--------------------------------- */
-
-h1 {
-	text-align: left;
-	padding-left: 120px;
-	}
+/* --------------------------------------- */
 
 img {
 	border-radius: 50%;
 }
 
-.zena1, .zena2, .zena3, .zena4 {
+.kontejner {
 box-sizing: border-box;
 border: solid gray;
-width: 300px;
 border-radius: 10px;
-text-align: center;
-padding: 20px;
-margin: 15px;
 }
 
 /* mobil */
 @media screen and (min-width: 0px) and (max-width:540px) {
-	.flexbox {
+	.flexbox .kontejner {
 	box-sizing: border-box;
 	display: block;
 	flex-wrap: nowrap;
-}
+	padding: 5px;
+	margin: 10px;
+	width: 250px;
+  height: 250px;
+	text-align: center;
+	}
 h1 {
-	text-align: left;
-	padding-left: 120px;
+	text-align: center
+	}
+h2 {
+	margin: 5px;
 	}
 }
 
-/* tablet /
+/* Tablet */
 @media screen and (min-width: 540px) and (max-width:960px) {
-	.zena1, .zena2 {
+.kontejner {
 	display: flex;
-flex-wrap: wrap;
-}
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 10px;
+width: 470px;
+height: 180px;
 }
 
-
-/* PC /
-@media screen and (min-width: 960px) {
-	.flexbox {
+.kontejner1, .kontejner2 {
+	flex-wrap: nowrap;
 	display: flex;
-flex-wrap: wrap;
-flex: 1;
-flex-direction: column;
+}
+.zena {
+	width: 280px;
+  height: 250px;
+	text-align: left;
+	padding-top: 20px;
+}
+img {
+	float: left;
+	margin: 10px 
 }
 }
 
-*/
+
