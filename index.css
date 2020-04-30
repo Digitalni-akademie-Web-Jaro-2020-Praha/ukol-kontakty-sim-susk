@@ -1,0 +1,103 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+/* --------------------------------------- */
+
+img {
+	border-radius: 50%;
+}
+
+.kontejner {
+box-sizing: border-box;
+border: solid gray;
+border-radius: 10px;
+}
+
+/* mobil */
+@media screen and (min-width: 0px) and (max-width:540px) {
+.kontejner {
+	box-sizing: border-box;
+	display: block;
+	flex-wrap: nowrap;
+	padding: 5px;
+	margin: 10px;
+	width: 250px;
+  height: 250px;
+	text-align: center;
+	}
+h1 {
+	text-align: left;
+	padding-left: 80px;
+	}
+h2 {
+	margin: 5px;
+	}
+}
+
+/* Tablet */
+@media screen and (min-width: 541px) and (max-width:960px) {
+.kontejner {
+		width: 45%;
+		display: flex;
+		padding: 10px;
+		margin: 10px;
+	}
+.flexbox {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 10px;
+	}
+.zena {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		margin: 10px;
+	}
+h1 {
+		text-align: center;
+		}
+img {
+		float: left;
+		margin: 10px;
+		width: 80px;
+		}
+p {
+		margin: 0px;
+	}
+}
+
+/* PC */
+@media screen and (min-width: 961px) {
+.flexbox {
+		box-sizing: border-box;
+		display: flex;
+		flex-wrap: nowrap;
+		padding: 0px;
+	}
+.kontejner {
+		padding: 5px;
+		margin: 10px;
+		min-width: 300px;
+		height: 300px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+.zena {
+		text-align: center;
+		padding: 15px;
+	}
+h1 {
+		text-align: center;
+		}
+h2{
+	margin: 0px;
+	}
+}
